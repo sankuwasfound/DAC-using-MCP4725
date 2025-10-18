@@ -1,0 +1,14 @@
+# Troubleshooting
+
+✅ **No output voltage**
+- Check GND and VCC connections.
+- Confirm I2C address (use I2C Scanner sketch).
+
+✅ **Code upload fails**
+- Check correct COM port and Nano board in Tools menu.
+
+✅ **Output is noisy**
+- Use shorter wires or decoupling capacitor (0.1µF between VOUT & GND).
+
+✅ **Very slow output**
+- Avoid using `true` in `setVoltage()` (EEPROM write slows down updates).
